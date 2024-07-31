@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "functions": {
+      "*.js": {
+        "runtime": "vercel-node"
+      }
+    },
+    "routes": [
+      { "src": "/(.*)", "dest": "/$1.js" }
+    ]
+  }
