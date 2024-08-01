@@ -75,10 +75,10 @@ app.post('/send-email', async (req, res) => {
   const { student, pdfData } = req.body;
 
   const transporter = nodemailer.createTransport({
-    service: 'outlook', // o el servicio que uses (ej. Outlook, Yahoo, etc.)
+    service: 'gmail', // o el servicio que uses (ej. Outlook, Yahoo, etc.)
     auth: {
-      user: 'pnpiedra@utpl.edu.ec', // tu correo
-      pass: 'PpLu2022.' // tu contraseña
+      user: 'certificadosvautpl@gmail.com', // tu correo
+      pass: 'certificadosvautpl2024' // tu contraseña
     },
     tls: {
         rejectUnauthorized: false
@@ -86,7 +86,7 @@ app.post('/send-email', async (req, res) => {
   });
 
   const mailOptions = {
-    from: 'pnpiedra@utpl.edu.ec',
+    from: 'certificadosvautpl@gmail.com',
     to: student.email,
     subject: 'Certificado de Curso',
     text: `Hola ${student.nombre}, adjunto encontrarás tu certificado de curso.`,
