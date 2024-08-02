@@ -78,7 +78,7 @@ app.post('/send-email', async (req, res) => {
     service: 'gmail', // o el servicio que uses (ej. Outlook, Yahoo, etc.)
     auth: {
       user: 'certificadosvautpl@gmail.com', // tu correo
-      pass: 'certificadosvautpl2024' // tu contraseña
+      pass: 'qwrg rpfs yyjl qorv' // tu contraseña
     },
     tls: {
         rejectUnauthorized: false
